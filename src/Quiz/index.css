@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#0cebeb, #20e3b2, #29ffc6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.App {
+  width: 500px;
+  border-radius: 30px;
+  padding: 40px;
+  background-color: #fff;
+  position: relative;
+}
+.App .result {
+  text-align: center;
+}
+.App .result button {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  border-radius: 30px;
+  border: 0;
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #f00067;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.App .result h2 {
+  margin-bottom: 0;
+}
+.App .result img {
+  width: 150px;
+}
+.App .progress {
+  height: 10px;
+  border-radius: 30px;
+  background-color: #e8e8e8;
+  margin-bottom: 25px;
+}
+.App .progress__inner {
+  height: 100%;
+  border-radius: 30px;
+  width: 80%;
+  background: #12e730;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, #12e730 0%, #00d4ff 100%);
+}
+.App:before, .App:after {
+  content: "";
+  display: block;
+  height: 50px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.App:before {
+  width: 95%;
+  bottom: -10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+}
+.App:after {
+  width: 90%;
+  bottom: -20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+.App h1 {
+  margin: 0;
+}
+.App ul {
+  list-style: none;
+  padding: 0;
+}
+.App ul li {
+  padding: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.App ul li:hover {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=index.css.map */
